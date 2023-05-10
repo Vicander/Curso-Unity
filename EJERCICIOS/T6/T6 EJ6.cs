@@ -16,7 +16,6 @@ public class Controller : MonoBehaviour
         void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        Debug.Log(isGrounded);
     }
 
     // Update is called once per frame
@@ -26,7 +25,6 @@ public class Controller : MonoBehaviour
        {
         rb.AddForce(Vector3.up * fuerzaSalto, ForceMode.Impulse);
         isGrounded = false;
-        Debug.Log(isGrounded);
        } 
     }
 
